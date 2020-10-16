@@ -18,12 +18,6 @@ resources:
     endpoint: GitHub - MIchaelMainer
     name: microsoftgraph/msgraph-metadata
     ref: master # 
-  pipelines:
-  - pipeline: publishMetadata # This pipeline produces an metadata artifact that we need to validate.
-    source: (beta - 3) msgraph-publish-cleanmetadata
-    trigger: # TODO: validate that this pipeline triggers as expected.
-      branches:
-      - master
 
 pool:
   vmImage: windows-latest # Info about this image: [0][1]
