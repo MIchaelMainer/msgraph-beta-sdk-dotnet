@@ -10,12 +10,12 @@ resources:
   repositories:
   - repository: msgraph-beta-sdk-dotnet # The name used to reference this repository in the checkout step
     type: github
-    endpoint: microsoftgraph
-    name: microsoftgraph/msgraph-beta-sdk-dotnet
+    endpoint: GitHub - MIchaelMainer
+    name: MIchaelMainer/msgraph-beta-sdk-dotnet
     ref: master # checkout the master branch
   - repository: msgraph-metadata
     type: github
-    endpoint: microsoftgraph
+    endpoint: GitHub - MIchaelMainer
     name: microsoftgraph/msgraph-metadata
     ref: master # 
   pipelines:
@@ -29,7 +29,7 @@ pool:
   vmImage: windows-latest # Info about this image: [0][1]
 
 variables:
-  - group: MicrosoftGraph # Variable group, where variables not set here come from. Set in Azure DevOps
+  # - group: MicrosoftGraph # Variable group, where variables not set here come from. Set in Azure DevOps
   - name: endpoint
     value: beta
 
